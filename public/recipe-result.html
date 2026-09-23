@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CookSmart - Recipe Result</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&amp;family=Outfit:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bgDark: '#121212',
+            brandOrange: '#FF6B2B',
+            textMuted: '#A8A8A8',
+            creamText: '#F5EFEB',
+            navBg: '#2A2A2A',
+            cardDark: '#1A1A1A'
+          },
+          fontFamily: {
+            outfit: ['Outfit', 'sans-serif'],
+            dmsans: ['DM Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: #121212;
+      color: #FFFFFF;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-outfit {
+      font-family: 'Outfit', sans-serif;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill-1 {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Hide scrollbar for standard app feel */
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    * {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</link></head>
+<body class="bg-[#121212] text-white flex justify-center min-h-screen">
+<!-- Mobile Container (390px layout) -->
+<div class="w-full max-w-[390px] min-h-screen bg-[#121212] flex flex-col relative pb-[100px] shadow-2xl">
+<!-- Top Header (56px) -->
+<header class="h-[56px] px-4 flex items-center justify-between sticky top-0 bg-[#121212]/95 backdrop-blur-md z-40 border-b border-white/[0.05]">
+<button aria-label="Go Back" class="w-10 h-10 flex items-center justify-center text-[#F5EFEB] active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<h1 class="font-outfit font-semibold text-[18px] text-white tracking-tight">Recipe Result</h1>
+<button aria-label="Bookmark" class="w-10 h-10 flex items-center justify-center text-[#F5EFEB] active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[24px]">bookmark_border</span>
+</button>
+</header>
+<main class="flex-1">
+<!-- Large Hero Food Image (16:9 full width, 20px bottom rounded corners) -->
+<div class="w-full aspect-[16/9] relative overflow-hidden rounded-b-[20px] shadow-lg bg-[#1c1b1b]">
+<img alt="Creamy Tuscan Chicken" class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-500" loading="eager" src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute bottom-3 left-4 bg-black/60 backdrop-blur-md border border-white/10 px-2.5 py-1 rounded-full flex items-center gap-1.5 text-xs text-white">
+<span class="w-2 h-2 rounded-full bg-[#FF6B2B]"></span>
+<span class="font-medium">Chef Verified</span>
+</div>
+</div>
+<!-- Recipe Name & Metadata Section (20px padding) -->
+<section class="px-5 pt-5 pb-4">
+<h2 class="font-outfit font-extrabold text-[26px] leading-tight text-white mb-3 tracking-tight">
+          Creamy Tuscan Chicken
+        </h2>
+<!-- Metadata row -->
+<div class="flex items-center gap-4 text-[#A8A8A8] text-[13px] font-dmsans">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-[#FF6B2B]">schedule</span>
+<span>35 min</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-[#FF6B2B]">local_fire_department</span>
+<span>Medium</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[17px] text-[#FF6B2B]">restaurant</span>
+<span>4 servings</span>
+</div>
+</div>
+</section>
+<!-- Thin 1px Divider -->
+<div class="mx-5 border-b border-white/[0.08]"></div>
+<!-- Ingredients Section (20px padding) -->
+<section class="px-5 py-5">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2.5">
+<h3 class="font-outfit font-bold text-[18px] text-white tracking-tight">Ingredients</h3>
+<span class="bg-[#242424] text-[#FF6B2B] text-[12px] font-outfit font-semibold px-2 py-0.5 rounded-full border border-white/5">
+              8 items
+            </span>
+</div>
+<button class="text-xs text-[#A8A8A8] hover:text-[#FF6B2B] transition-colors font-dmsans">Check all</button>
+</div>
+<!-- Stacked Ingredients List (48px row height, circular checkbox 22px) -->
+<div class="divide-y divide-white/[0.04]">
+<!-- Item 1 -->
+<label class="h-[48px] flex items-center justify-between cursor-pointer group select-none">
+<div class="flex items-center gap-3">
+<input class="peer hidden" type="checkbox"/>
+<div class="w-[22px] h-[22px] rounded-full border border-white/20 flex items-center justify-center peer-checked:bg-[#FF6B2B] peer-checked:border-[#FF6B2B] group-hover:border-white/40 transition-colors">
+<span class="material-symbols-outlined text-[15px] text-white hidden peer-checked:block">check</span>
+</div>
+<span class="font-dmsans text-[15px] text-white peer-checked:text-[#A8A8A8] peer-checked:line-through transition-colors">Chicken breast</span>
+</div>
+<span class="font-dmsans text-[13px] text-[#F5EFEB]">500g</span>
+</label>
+<!-- Item 2 -->
+<label class="h-[48px] flex items-center justify-between cursor-pointer group select-none">
+<div class="flex items-center gap-3">
+<input class="peer hidden" type="checkbox"/>
+<div class="w-[22px] h-[22px] rounded-full border border-white/20 flex items-center justify-center peer-checked:bg-[#FF6B2B] peer-checked:border-[#FF6B2B] group-hover:border-white/40 transition-colors">
+<span class="material-symbols-outlined text-[15px] text-white hidden peer-checked:block">check</span>
+</div>
+<span class="font-dmsans text-[15px] text-white peer-checked:text-[#A8A8A8] peer-checked:line-through transition-colors">Heavy cream</span>
+</div>
+<span class="font-dmsans text-[13px] text-[#F5EFEB]">200ml</span>
+</label>
+<!-- Item 3 -->
+<label class="h-[48px] flex items-center justify-between cursor-pointer group select-none">
+<div class="flex items-center gap-3">
+<input class="peer hidden" type="checkbox"/>
+<div class="w-[22px] h-[22px] rounded-full border border-white/20 flex items-center justify-center peer-checked:bg-[#FF6B2B] peer-checked:border-[#FF6B2B] group-hover:border-white/40 transition-colors">
+<span class="material-symbols-outlined text-[15px] text-white hidden peer-checked:block">check</span>
+</div>
+<span class="font-dmsans text-[15px] text-white peer-checked:text-[#A8A8A8] peer-checked:line-through transition-colors">Cherry tomatoes</span>
+</div>
+<span class="font-dmsans text-[13px] text-[#F5EFEB]">150g</span>
+</label>
+<!-- Item 4 -->
+<label class="h-[48px] flex items-center justify-between cursor-pointer group select-none">
+<div class="flex items-center gap-3">
+<input class="peer hidden" type="checkbox"/>
+<div class="w-[22px] h-[22px] rounded-full border border-white/20 flex items-center justify-center peer-checked:bg-[#FF6B2B] peer-checked:border-[#FF6B2B] group-hover:border-white/40 transition-colors">
+<span class="material-symbols-outlined text-[15px] text-white hidden peer-checked:block">check</span>
+</div>
+<span class="font-dmsans text-[15px] text-white peer-checked:text-[#A8A8A8] peer-checked:line-through transition-colors">Garlic cloves</span>
+</div>
+<span class="font-dmsans text-[13px] text-[#F5EFEB]">4 pcs</span>
+</label>
+<!-- Item 5 -->
+<label class="h-[48px] flex items-center justify-between cursor-pointer group select-none">
+<div class="flex items-center gap-3">
+<input class="peer hidden" type="checkbox"/>
+<div class="w-[22px] h-[22px] rounded-full border border-white/20 flex items-center justify-center peer-checked:bg-[#FF6B2B] peer-checked:border-[#FF6B2B] group-hover:border-white/40 transition-colors">
+<span class="material-symbols-outlined text-[15px] text-white hidden peer-checked:block">check</span>
+</div>
+<span class="font-dmsans text-[15px] text-white peer-checked:text-[#A8A8A8] peer-checked:line-through transition-colors">Spinach</span>
+</div>
+<span class="font-dmsans text-[13px] text-[#F5EFEB]">100g</span>
+</label>
+<!-- Item 6 -->
+<label class="h-[48px] flex items-center justify-between cursor-pointer group select-none">
+<div class="flex items-center gap-3">
+<input class="peer hidden" type="checkbox"/>
+<div class="w-[22px] h-[22px] rounded-full border border-white/20 flex items-center justify-center peer-checked:bg-[#FF6B2B] peer-checked:border-[#FF6B2B] group-hover:border-white/40 transition-colors">
+<span class="material-symbols-outlined text-[15px] text-white hidden peer-checked:block">check</span>
+</div>
+<span class="font-dmsans text-[15px] text-white peer-checked:text-[#A8A8A8] peer-checked:line-through transition-colors">Parmesan</span>
+</div>
+<span class="font-dmsans text-[13px] text-[#F5EFEB]">50g</span>
+</label>
+<!-- Item 7 -->
+<label class="h-[48px] flex items-center justify-between cursor-pointer group select-none">
+<div class="flex items-center gap-3">
+<input class="peer hidden" type="checkbox"/>
+<div class="w-[22px] h-[22px] rounded-full border border-white/20 flex items-center justify-center peer-checked:bg-[#FF6B2B] peer-checked:border-[#FF6B2B] group-hover:border-white/40 transition-colors">
+<span class="material-symbols-outlined text-[15px] text-white hidden peer-checked:block">check</span>
+</div>
+<span class="font-dmsans text-[15px] text-white peer-checked:text-[#A8A8A8] peer-checked:line-through transition-colors">Olive oil</span>
+</div>
+<span class="font-dmsans text-[13px] text-[#F5EFEB]">2 tbsp</span>
+</label>
+<!-- Item 8 -->
+<label class="h-[48px] flex items-center justify-between cursor-pointer group select-none">
+<div class="flex items-center gap-3">
+<input class="peer hidden" type="checkbox"/>
+<div class="w-[22px] h-[22px] rounded-full border border-white/20 flex items-center justify-center peer-checked:bg-[#FF6B2B] peer-checked:border-[#FF6B2B] group-hover:border-white/40 transition-colors">
+<span class="material-symbols-outlined text-[15px] text-white hidden peer-checked:block">check</span>
+</div>
+<span class="font-dmsans text-[15px] text-white peer-checked:text-[#A8A8A8] peer-checked:line-through transition-colors">Italian seasoning</span>
+</div>
+<span class="font-dmsans text-[13px] text-[#F5EFEB]">1 tsp</span>
+</label>
+</div>
+</section>
+<!-- Thin Divider -->
+<div class="mx-5 border-b border-white/[0.08]"></div>
+<!-- Instructions Section (20px padding) -->
+<section class="px-5 py-5">
+<h3 class="font-outfit font-bold text-[18px] text-white mb-4 tracking-tight">Instructions</h3>
+<div class="flex flex-col gap-4">
+<!-- Step 1 -->
+<div class="flex items-start gap-3.5">
+<div class="w-8 h-8 rounded-full bg-[#FF6B2B] flex-shrink-0 flex items-center justify-center shadow-sm">
+<span class="font-outfit font-bold text-white text-[15px]">1</span>
+</div>
+<p class="font-dmsans text-[15px] text-white leading-[1.5] pt-0.5">
+              Heat olive oil in pan season chicken.
+            </p>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-3.5">
+<div class="w-8 h-8 rounded-full bg-[#FF6B2B] flex-shrink-0 flex items-center justify-center shadow-sm">
+<span class="font-outfit font-bold text-white text-[15px]">2</span>
+</div>
+<p class="font-dmsans text-[15px] text-white leading-[1.5] pt-0.5">
+              Cook chicken 6-7 min per side until golden remove and slice.
+            </p>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-3.5">
+<div class="w-8 h-8 rounded-full bg-[#FF6B2B] flex-shrink-0 flex items-center justify-center shadow-sm">
+<span class="font-outfit font-bold text-white text-[15px]">3</span>
+</div>
+<p class="font-dmsans text-[15px] text-white leading-[1.5] pt-0.5">
+              Saute garlic add cherry tomatoes cook 3 minutes.
+            </p>
+</div>
+<!-- Step 4 -->
+<div class="flex items-start gap-3.5">
+<div class="w-8 h-8 rounded-full bg-[#FF6B2B] flex-shrink-0 flex items-center justify-center shadow-sm">
+<span class="font-outfit font-bold text-white text-[15px]">4</span>
+</div>
+<p class="font-dmsans text-[15px] text-white leading-[1.5] pt-0.5">
+              Pour heavy cream add spinach and seasoning simmer 5 minutes.
+            </p>
+</div>
+<!-- Step 5 -->
+<div class="flex items-start gap-3.5">
+<div class="w-8 h-8 rounded-full bg-[#FF6B2B] flex-shrink-0 flex items-center justify-center shadow-sm">
+<span class="font-outfit font-bold text-white text-[15px]">5</span>
+</div>
+<p class="font-dmsans text-[15px] text-white leading-[1.5] pt-0.5">
+              Return chicken top with parmesan serve immediately.
+            </p>
+</div>
+</div>
+</section>
+<!-- Save Recipe CTA Button Section -->
+<section class="px-5 pt-2 pb-6">
+<button class="w-full h-[56px] bg-[#FF6B2B] hover:bg-[#ff7b40] active:scale-[0.98] transition-all rounded-full flex items-center justify-center gap-2.5 shadow-[0_8px_24px_rgba(255,107,43,0.35)]">
+<span class="material-symbols-outlined text-white text-[22px]">bookmark</span>
+<span class="font-outfit font-bold text-white text-[18px]">Save Recipe</span>
+</button>
+</section>
+</main>
+<!-- Fixed Bottom Nav (64px #2A2A2A, whisper top border) -->
+<nav class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[390px] h-[64px] bg-[#2A2A2A] border-t border-white/[0.08] flex items-center justify-around px-2 z-50 shadow-[0_-4px_20px_rgba(0,0,0,0.5)]">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-[#F5EFEB] opacity-80 hover:opacity-100 transition-opacity flex-1 py-1" href="index.html">
+<span class="material-symbols-outlined text-[22px]">restaurant_menu</span>
+<span class="font-outfit text-[10px] mt-0.5 font-medium tracking-tight">Home</span>
+</a>
+<!-- Discover -->
+<a class="flex flex-col items-center justify-center text-[#F5EFEB] opacity-80 hover:opacity-100 transition-opacity flex-1 py-1" href="ingredient-input.html">
+<span class="material-symbols-outlined text-[22px]">explore</span>
+<span class="font-outfit text-[10px] mt-0.5 font-medium tracking-tight">Discover</span>
+</a>
+<!-- Saved (Active) -->
+<a class="flex flex-col items-center justify-center text-[#FF6B2B] flex-1 py-1 relative" href="saved-recipes.html">
+<span class="material-symbols-outlined text-[22px] fill-1">bookmark</span>
+<span class="font-outfit text-[10px] mt-0.5 font-bold tracking-tight">Saved</span>
+<span class="w-1 h-1 rounded-full bg-[#FF6B2B] mt-0.5"></span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-[#F5EFEB] opacity-80 hover:opacity-100 transition-opacity flex-1 py-1" href="#">
+<span class="material-symbols-outlined text-[22px]">person</span>
+<span class="font-outfit text-[10px] mt-0.5 font-medium tracking-tight">Profile</span>
+</a>
+</nav>
+</div>
+</body>
+</html>

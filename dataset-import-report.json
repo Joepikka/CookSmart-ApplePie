@@ -1,0 +1,196 @@
+{
+  "excluded": [
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 3441,
+      "title": "\"Burnt\" Carrots and Parsnips"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 3641,
+      "title": "\"Bloody Mary\" Tomato Toast with Celery and Horseradish"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 4117,
+      "title": "Smoked Salmon Breakfast Salad with Crispbread"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 4124,
+      "title": "Pork Chops with Carrots and Toasted Buckwheat"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 4126,
+      "title": "Chickpea Pancakes with Leeks, Squash, and Yogurt"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 4129,
+      "title": "Lentils with Cucumbers, Chard, and Poached Egg"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 4139,
+      "title": "Hazelnut Butter and Coffee Meringues"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 4276,
+      "title": "\"Candy Corn\" Pumpkin Blondies"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 4293,
+      "title": "Broccolini-Cheddar Gratin with Rye Breadcrumbs"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 4307,
+      "title": "Radicchio, Shaved Fennel, and Pomegranate Salad"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 4331,
+      "title": "Pumpkin Gruyère Gratin with Thyme"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 4339,
+      "title": "Halibut Confit With Leeks, Coriander, and Lemon"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 4344,
+      "title": "Fritto Misto"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 4352,
+      "title": "Radicchio and Apple Salad with Parmesan Crisps"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 4354,
+      "title": "Prosciutto, Watercress, and Fontina Toasties"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 4510,
+      "title": "Rhubarb Spritzer"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 4564,
+      "title": "Chickpea, Barley, and Feta Salad"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 4606,
+      "title": "Fried Chicken"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 4660,
+      "title": "Pistachio-Crusted Chicken with Carrot Raita"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 5498,
+      "title": "BA's Ultimate Lobster Rolls"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 5617,
+      "title": "Rhubarb Shortcakes"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 6679,
+      "title": "\"Candy Corn\" Frozen Citrus Cream Pops"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 6781,
+      "title": "Gourmet Live's First-Birthday Cake"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 7823,
+      "title": "\"Carbonnade à la Flamande\" Short Ribs"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 8039,
+      "title": "\"Top Tier\" Devil's Food Cake with Sour Cream-Fudge Frosting"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 8413,
+      "title": "Cod with Mussels, Chorizo, Fried Croutons, and Saffron Mayonnaise"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 8504,
+      "title": "\"Pizza\" Sandwiches"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 8901,
+      "title": "Polow (Persian Rice with Pistachios and Dill)"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 9636,
+      "title": "Smoked Salmon with Egg Salad and Green beans"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 9831,
+      "title": "Stracciatella Tortoni Cake with Espresso Fudge Sauce"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 10356,
+      "title": "Royal Icing"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 11221,
+      "title": ""
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 11544,
+      "title": "\"Like a Caesar\""
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 11687,
+      "title": "\"Soda Jerk\" Beans"
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 12373,
+      "title": ""
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 12378,
+      "title": ""
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 12818,
+      "title": ""
+    },
+    {
+      "reason": "Missing title, ingredients, instructions, or matching image",
+      "row": 12829,
+      "title": ""
+    }
+  ],
+  "total": 13501,
+  "imported": 13463
+}
